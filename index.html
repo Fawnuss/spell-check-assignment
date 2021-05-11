@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Spell Check</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Spell Check Assignment</h1>
+  <hr>
+  
+  <p>
+    Select Which Part: <select id="part-select">
+      <option value="userCheck">User Word Check</option>
+      <option value="aliceCheck">Alice In Wonderland Word Check</option>
+    </select>
+  </p>
+
+  <p>
+    Select Search Algorithm: <select id="algorithm-select">
+      <option value="linear">Linear Search</option>
+      <option value="binary">Binary Search</option>
+    </select>
+  </p>
+
+  <p>
+    <button id="run-btn">Run Search</button>
+  </p>
+
+  <h3>Results</h3>
+  <p>Words checked in <span id="search-time">----</span> milliseconds.</p>
+  <p>Words found? (Part A) <span id="userSearch-results">----</span></p>
+  <p>How many words not found? (Part B) <span id="aliceSearch-results">----</span></p>
+  <hr>
+
+
+  <!-- Load JavaScript -->
+  <script src="js/file-loader.js"></script>
+  <script src='js/main.js'></script>
+</body>
+
+</html>
